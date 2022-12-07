@@ -1,0 +1,11 @@
+[id]:
+getStaticProps: Lấy dữ liệu tĩnh
+    + Dữ liệu tĩnh: lấy dữ liệu trước khi request của người dùng thực hiện thành công.
+    + Nếu mỗi người dùng request tới mà dữ liệu trả về khác nhau => không nên sử dụng.
+    + npm run build - production: sẽ gọi request trước, chuyển thành dạng html cứng, không cần gọi request lần nào nữa => performance.
+
+getStaticPaths:
+    + Lấy dữ liệu tĩnh những dữ liệu tĩnh nào thì còn phụ thuộc vào params
+
+getServerSideProps:
+    + Dữ liệu phụ thuộc vào mỗi request, nhưng vẫn tạo ra HTML tĩnh cho Front-end => nên vẫn tốt cho SEO
