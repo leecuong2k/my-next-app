@@ -23,7 +23,7 @@ const Random = ({ joke }) => {
   )
 };
 
-export const getServerSideProps = async (context) => {
+export const getServerSideProps = async () => {
   const joke = await getRandomJoke();
 
   if (!joke)
